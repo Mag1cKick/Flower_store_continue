@@ -9,8 +9,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/flowers")
 public class FlowerController {
-    final private int count = 12; 
-    final private int countl = 120;
+    final public int count = 12; 
+    final public int countl = 120;
     
     @GetMapping(produces = "application/json")
     public List<Flower> getFlowers() {
