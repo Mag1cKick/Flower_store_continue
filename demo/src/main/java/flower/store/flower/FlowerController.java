@@ -3,14 +3,16 @@ package flower.store.demo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import lombok.Getter;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/flowers")
+@Getter
 public class FlowerController {
-    final public int count = 12; 
-    final public int countl = 120;
+    private final int count = 12; 
+    private final int countl = 120;
     
     @GetMapping(produces = "application/json")
     public List<Flower> getFlowers() {
