@@ -1,4 +1,4 @@
-package flower.store.demo;
+package flower.store.order;
 
 public class Item {
     private Flower flower;

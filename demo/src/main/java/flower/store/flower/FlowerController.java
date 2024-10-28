@@ -1,4 +1,4 @@
-package flower.store.demo;
+package flower.store.flower;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
