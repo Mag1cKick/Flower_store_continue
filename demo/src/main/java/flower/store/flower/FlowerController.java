@@ -9,12 +9,14 @@ import java.util.List;
 @RestController
 @RequestMapping("/flowers")
 public class FlowerController {
+    final private int count = 12; 
+    final private int countl = 120;
     
     @GetMapping(produces = "application/json")
     public List<Flower> getFlowers() {
         return List.of(
             Flower.rose(),
-            new Flower(12, FlowerColor.YELLOW, 120, FlowerType.ROSE) // Example of another flower
+            new Flower(count, FlowerColor.YELLOW, countl, FlowerType.ROSE)
         );
     }
 }
