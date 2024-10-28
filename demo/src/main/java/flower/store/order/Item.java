@@ -1,5 +1,7 @@
 package flower.store.order;
 
+import flower.store.Flower;
+
 public class Item {
     private Flower flower;
     private int quantity;
